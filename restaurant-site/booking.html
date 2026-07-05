@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Table | The Olive & Oak</title>
+<meta name="description" content="Reserve a table online at The Olive & Oak.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="wrap nav-inner">
+      <a href="index.html" class="brand">The Olive <em>&</em> Oak</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="banquet.html">Banquet</a></li>
+<li><a href="catering.html">Catering</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="booking.html">Book a Table</a></li>
+
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a href="contact.html" class="btn btn-ghost" style="display:none" id="hide-on-mobile"></a>
+        <a href="booking.html" class="btn btn-primary"><span>Reserve a Table</span> &rarr;</a>
+        <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+<section class="page-hero hero-photo" style="background-image:url('https://picsum.photos/seed/booking-hero/1600/700')">
+  <div class="wrap">
+    <span class="eyebrow">Reservations</span>
+    <h1>Book a Table</h1>
+    <p>Tables for up to 8 guests can be booked online. For larger parties, see our Banquet Facility page.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <form data-demo-form class="reveal" style="max-width:640px" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="hidden" name="_subject" value="New Table Reservation">
+      <div class="form-grid">
+        <div class="field"><label for="r-name">Full Name</label><input id="r-name" name="full_name" type="text" required></div>
+        <div class="field"><label for="r-phone">Phone</label><input id="r-phone" name="phone" type="tel" required></div>
+        <div class="field"><label for="r-email">Email</label><input id="r-email" name="email" type="email" required></div>
+        <div class="field"><label for="r-guests">Party Size</label>
+          <select id="r-guests" name="party_size">
+            <option>1 Guest</option><option>2 Guests</option><option>3 Guests</option>
+            <option>4 Guests</option><option>5 Guests</option><option>6 Guests</option>
+            <option>7 Guests</option><option>8 Guests</option>
+          </select>
+        </div>
+        <div class="field"><label for="r-date">Date</label><input id="r-date" name="date" type="date" required></div>
+        <div class="field"><label for="r-time">Time</label><input id="r-time" name="time" type="time" required></div>
+        <div class="field full"><label for="r-notes">Special Requests</label><textarea id="r-notes" name="special_requests" placeholder="Allergies, occasions, seating preference"></textarea></div>
+      </div>
+      <button type="submit" class="btn btn-primary">Confirm Reservation &rarr;</button>
+      <div class="form-success">Thanks — your reservation request has been received.</div>
+    </form>
+
+    <div class="card mt-5" style="max-width:640px">
+      <h3>A note on going live</h3>
+      <p class="menu-item-desc mt-2">This form is front-end only &mdash; it doesn't yet check real availability or send confirmations. For a live restaurant, the fastest path is embedding a reservation platform like OpenTable, Resy, or Tock, which handles availability, confirmations, and no-show protection for you. I can wire either approach in &mdash; a real booking backend, or an embedded widget from one of those platforms.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">The Olive & Oak</div>
+          <p>Seasonal, fire-kissed plates and slow evenings in the heart of downtown. Under construction &mdash; opening soon.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="menu.html">Menu</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About Us</a>
+          <a href="menu-kit.html">Menu Kit</a>
+        </div>
+        <div>
+          <h4>Events</h4>
+          <a href="banquet.html">Banquet Facility</a>
+          <a href="catering.html">Catering</a>
+          <a href="booking.html">Online Booking</a>
+        </div>
+        <div>
+          <h4>Visit</h4>
+          <p>128 Harvest Lane<br>Springfield, USA</p>
+          <a href="tel:+15555550123">(555) 555-0123</a>
+          <a href="mailto:hello@oliveandoak.example">hello@oliveandoak.example</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span class="js-year"></span> The Olive & Oak. All rights reserved.</span>
+        <span>Placeholder content &mdash; site under construction</span>
+      </div>
+    </div>
+  </footer>
+<script src="js/main.js"></script>
+</body>
+</html>

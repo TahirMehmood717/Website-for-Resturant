@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | The Olive & Oak</title>
+<meta name="description" content="Contact The Olive & Oak — visiting hours, location, and message form.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="wrap nav-inner">
+      <a href="index.html" class="brand">The Olive <em>&</em> Oak</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="banquet.html">Banquet</a></li>
+<li><a href="catering.html">Catering</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="booking.html">Book a Table</a></li>
+
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a href="contact.html" class="btn btn-ghost" style="display:none" id="hide-on-mobile"></a>
+        <a href="booking.html" class="btn btn-primary"><span>Reserve a Table</span> &rarr;</a>
+        <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+<section class="page-hero hero-photo" style="background-image:url('https://picsum.photos/seed/contact-hero/1600/700')">
+  <div class="wrap">
+    <span class="eyebrow">Contact & Hours</span>
+    <h1>Get in touch</h1>
+    <p>Questions about reservations, events, or the menu &mdash; reach out any time.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap grid-2 reveal">
+    <form data-demo-form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="hidden" name="_subject" value="New Contact Message">
+      <div class="field"><label for="ct-name">Full Name</label><input id="ct-name" name="full_name" type="text" required></div>
+      <div class="field"><label for="ct-email">Email</label><input id="ct-email" name="email" type="email" required></div>
+      <div class="field"><label for="ct-subject">Subject</label>
+        <select id="ct-subject" name="subject">
+          <option>General Question</option>
+          <option>Reservation Help</option>
+          <option>Press Inquiry</option>
+          <option>Feedback</option>
+        </select>
+      </div>
+      <div class="field"><label for="ct-msg">Message</label><textarea id="ct-msg" name="message" required></textarea></div>
+      <button type="submit" class="btn btn-primary">Send Message &rarr;</button>
+      <div class="form-success">Thanks — your message has been received.</div>
+    </form>
+
+    <div>
+      <div class="card">
+        <h3>Visiting Hours</h3>
+        <table class="hours-table mt-2" style="color:var(--charcoal)">
+          <tr><td>Tue &ndash; Thu</td><td style="color:var(--copper)">5:00 PM &ndash; 10:00 PM</td></tr>
+          <tr><td>Fri &ndash; Sat</td><td style="color:var(--copper)">5:00 PM &ndash; 11:00 PM</td></tr>
+          <tr><td>Sunday</td><td style="color:var(--copper)">10:00 AM &ndash; 2:00 PM</td></tr>
+          <tr><td>Monday</td><td style="color:var(--copper)">Closed</td></tr>
+        </table>
+      </div>
+      <div class="card mt-3">
+        <h3>Location</h3>
+        <p class="menu-item-desc mt-1">128 Harvest Lane, Springfield, USA</p>
+        <p class="menu-item-desc">(555) 555-0123</p>
+        <p class="menu-item-desc">hello@oliveandoak.example</p>
+        <div class="dish-media mt-2" style="aspect-ratio:16/9">
+          <span style="position:absolute;bottom:10px;left:12px;color:#fff;font-family:var(--font-display);font-style:italic">Map embed placeholder</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">The Olive & Oak</div>
+          <p>Seasonal, fire-kissed plates and slow evenings in the heart of downtown. Under construction &mdash; opening soon.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="menu.html">Menu</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About Us</a>
+          <a href="menu-kit.html">Menu Kit</a>
+        </div>
+        <div>
+          <h4>Events</h4>
+          <a href="banquet.html">Banquet Facility</a>
+          <a href="catering.html">Catering</a>
+          <a href="booking.html">Online Booking</a>
+        </div>
+        <div>
+          <h4>Visit</h4>
+          <p>128 Harvest Lane<br>Springfield, USA</p>
+          <a href="tel:+15555550123">(555) 555-0123</a>
+          <a href="mailto:hello@oliveandoak.example">hello@oliveandoak.example</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span class="js-year"></span> The Olive & Oak. All rights reserved.</span>
+        <span>Placeholder content &mdash; site under construction</span>
+      </div>
+    </div>
+  </footer>
+<script src="js/main.js"></script>
+</body>
+</html>
